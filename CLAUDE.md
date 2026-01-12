@@ -180,4 +180,18 @@ The project must maintain a lightweight but reliable change tracking system.
 The goal is **continuity of understanding**, not exhaustive logging.
 
 
+## Docker
+
+- Docker support is required but must remain **minimal**
+- Use a single `Dockerfile`
+- Base image: official Python slim image (version pinned)
+- **ONLY use `uv`** for dependency management inside Docker
+- Do not use `pip` or `latest` tags
+- Keep the image small and reproducible
+- Docker environment should match local development as closely as possible
+- Use environment variables for configuration (no hardcoded secrets)
+- Docker must be able to run tests (`uv run pytest`)
+- Avoid multi-stage builds and Docker Compose unless strictly necessary
+
+
   
