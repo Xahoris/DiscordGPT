@@ -1,0 +1,17 @@
+[project]
+name = "discordgpt"
+version = "0.1.0"
+description = "Discord bot for private AI conversations using OpenAI GPT"
+requires-python = ">=3.9.7"
+readme = "README.md"
+dependencies = [
+    "loguru>=0.7.3",
+    "openai>=2.15.0",
+    "py-cord>=2.6.1",
+    "python-dotenv>=1.2.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.11",
+]
