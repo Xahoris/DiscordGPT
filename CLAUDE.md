@@ -43,6 +43,7 @@ This document contains critical information about working with this codebase. Fo
 - **Maintainability**: Write code that's easy to update
 - **Testability**: Ensure code is testable
 - **Reusability**: Create reusable components and functions
+- **Extensibility (Prototype-Friendly)**: Design code with future feature additions in mind, as early versions are prototypes that will evolve
 - **Less Code = Less Debt**: Minimize code footprint
 
 ## Coding Best Practices
